@@ -11,4 +11,16 @@ class TaskController extends Controller
         
         return view('task.index');
     }
+
+    public function store(Request $request){
+        //this means die and dump
+      //dd($request->all());
+
+      //Validation
+      $request->validate([
+          'title' => 'required'
+      ]);
+
+
+    }
 }
