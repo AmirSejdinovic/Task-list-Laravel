@@ -23,15 +23,19 @@ class TaskController extends Controller
           'title' => 'required'
       ]);
 
-      //dd($request->task);
+      dd($request->title);
 
+      //Storing in database
       Task::create([
-       'title' => $request->task
+          'title' => $request->title
+
       ]);
 
-      session()->flash('msg', 'Task has been created');
+      session()->flash('msg','Task has been created');
 
       return redirect('/');
+
+      
 
 
     }

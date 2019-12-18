@@ -31,7 +31,7 @@
 
               <div class="form-group">
                 <label for="task">Task</label>
-                <input type="text" name="task" id="task" placehoder="Task" class="form-control">
+                <input type="text" name="title" id="task" placehoder="Task" class="form-control">
                 <div class="invalid-feedback">
           Please choose a username.
         </div>
