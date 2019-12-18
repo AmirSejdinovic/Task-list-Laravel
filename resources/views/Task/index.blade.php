@@ -59,12 +59,16 @@
                 <th>Task</th>
                 <th>Action</th>
              </tr>
+            
+             @foreach($tasks as $task)
 
              <tr>
-              <td>Task</td>
+              <td>{{$task->title}}</td>
               <td><button class="btn btn-danger btn-sm">Delete</button></td>
              </tr>
 
+
+            @endforeach
             </table>
          </div>
       </div>
