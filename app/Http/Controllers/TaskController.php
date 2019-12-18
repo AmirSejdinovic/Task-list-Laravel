@@ -39,8 +39,12 @@ class TaskController extends Controller
 
       return redirect('/');
 
-      
+    }
 
+    public function destroy($id){
+       
+        Task::destroy($id);
 
+        return redirect()->back()->with('msg','Task heas been deleted');
     }
 }
